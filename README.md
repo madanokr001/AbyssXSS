@@ -6,10 +6,12 @@
 
 # 사용법
 
-``cd``cd
+``` sh
+완료
+```완료
 
 ``ls``ls
 
-``python AbyssXSS``python AbyssXSS
+``python AbyssXSS``
 
 # 본자료는 https://xss-game.appspot.com/level1/frame 요 사이트에서 테스트 해주시면 감사하겠습니다
