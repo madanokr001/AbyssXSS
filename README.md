@@ -4,9 +4,12 @@
 
 사이트 간 스크립팅, 크로스 사이트 스크립팅은 웹 애플리케이션에서 많이 나타나는 취약점의 하나로 웹사이트 관리자가 아닌 이가 웹 페이지에 악성 스크립트를 삽입할 수 있는 취약점이다.
 
+![image](https://github.com/user-attachments/assets/00f79e87-c4b4-4a53-b15c-151bfe26f0db)
+
+
 # 사용법
 ```
-git clone
+git clone https://github.com/madanokr001/AbyssXSS-scanner.git
 ```
 ```
 cd AbyssXSS-scanner
