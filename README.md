@@ -6,11 +6,10 @@
 
 # 사용법
 
-``` sh
-완료
-```완료
-
-``ls``ls
+```
+cd AbyssXSS-scanner
+```
+ls AbyssXSS
 
 ``python AbyssXSS``
 
