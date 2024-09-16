@@ -1,24 +1,6 @@
-# XSS 취약점 스캐너 AbyssXSS
+# AbyssXSS scanner
 
-**xss 란?**
+# WHAT XSS CROSS SITE SCRIPTING? 
 
-사이트 간 스크립팅, 크로스 사이트 스크립팅은 웹 애플리케이션에서 많이 나타나는 취약점의 하나로 웹사이트 관리자가 아닌 이가 웹 페이지에 악성 스크립트를 삽입할 수 있는 취약점이다.
+Cross-site scripting (XSS) is a type of security vulnerability that can be found in some web applications.
 
-![image](https://github.com/user-attachments/assets/00f79e87-c4b4-4a53-b15c-151bfe26f0db)
-
-
-# 사용법
-```
-git clone https://github.com/madanokr001/AbyssXSS-scanner.git
-```
-```
-cd AbyssXSS-scanner
-```
-```
-ls AbyssXSS
-```
-```
-python AbyssXSS
-```
-
-# 본자료는 https://xss-game.appspot.com/level1/frame 요 사이트에서 테스트 해주시면 감사하겠습니다
