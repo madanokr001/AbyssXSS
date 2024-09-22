@@ -1,4 +1,4 @@
-# AbyssXSS scanner
+# VulnXSS scanner
 
 # WHAT XSS CROSS SITE SCRIPTING? 
 
